@@ -188,8 +188,10 @@ const ProductDetails4 = () => {
                   to={`/7RC-Shopping/category/${categoryId}`}
                   target="_blank"
                 >
-                  <div className="left">More {category.categoryName}</div>
                   <div className="left">{p.productName}</div>
+                  <div className="left">{p.productPrice} mmk</div>
+                  <br />
+                  <div>More>> {category.categoryName}</div>
                 </Link>
                 <div className="right">
                   <button className="btn">

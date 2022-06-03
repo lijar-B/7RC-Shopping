@@ -361,7 +361,7 @@ const CategoryDetails4 = () => {
   const handleItemCategory = (type) => {
     const collectionRef = collection(
       firestore,
-      `Products/${category.categoryName}/category`,
+      `Products/${category.categoryName}/products`,
     )
     const q = query(
       collectionRef,
@@ -371,7 +371,7 @@ const CategoryDetails4 = () => {
     onSnapshot(q, (snapshot) => {
       setProducts(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
     })
-    window.scrollTo(0, 600)
+    window.scrollTo(0, 500)
   }
 
   const handleEdit = async (id, editProductName, editProductPrice) => {

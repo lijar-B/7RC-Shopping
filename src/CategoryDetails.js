@@ -55,7 +55,7 @@ const CategoryDetails = () => {
     })
 
     return unsub
-  }, [categoryId, category.categoryName])
+  }, [categoryId, category])
 
   useEffect(() => {
     const collectionRef = collection(firestore, 'Products')
@@ -79,7 +79,7 @@ const CategoryDetails = () => {
     })
 
     //
-  }, [categoryId, category.categoryName])
+  }, [categoryId, category])
 
   const handleItemCategory = (type) => {
     const collectionRef = collection(

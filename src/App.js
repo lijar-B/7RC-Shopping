@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/admin" element={<Admin />} />
           <Route
-            path="/7RC-Shopping/admin/category/:categoryId/*"
+            path="/7RC-Shopping/category/admin/:categoryId/*"
             element={<CategoryDetails4 />}
           />
           <Route

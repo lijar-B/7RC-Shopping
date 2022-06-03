@@ -282,7 +282,7 @@ const CategoryDetails4 = () => {
 
       const collectionCategory = collection(
         firestore,
-        `Product/${category.categoryName}/category`,
+        `Products/${category.categoryName}/category`,
       )
       onSnapshot(collectionCategory, (snapshot) => {
         setItemCategory(
@@ -361,7 +361,7 @@ const CategoryDetails4 = () => {
   const handleItemCategory = (type) => {
     const collectionRef = collection(
       firestore,
-      `Product/${category.categoryName}/products`,
+      `Products/${category.categoryName}/category`,
     )
     const q = query(
       collectionRef,
